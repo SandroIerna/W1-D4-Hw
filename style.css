@@ -13,6 +13,7 @@ body {
   border-radius: 25px;
   overflow: hidden;
   background-color: black;
+  cursor: pointer;
 }
 
 .card img {
@@ -30,6 +31,8 @@ body {
   right: 1em;
   border-radius: 2em;
   text-align: center;
+  transform: translateY(-100px);
+  transition: 0.5s;
 }
 
 #save {
@@ -47,6 +50,8 @@ body {
   right: 0;
   height: 4em;
   opacity: 0.8;
+  transform: translateY(100px);
+  transition: 0.5s;
 }
 
 .oval {
@@ -107,4 +112,12 @@ body {
   text-overflow: ellipsis;
   width: 100%;
   font-weight: bold;
+}
+
+.card:hover .card-footer {
+  transform: translateY(0);
+}
+
+.card:hover .save {
+  transform: translateY(0);
 }
