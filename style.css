@@ -12,7 +12,7 @@ body {
   top: 15vh;
   border-radius: 25px;
   overflow: hidden;
-  background-color: black;
+  /* background-color: black; */
   cursor: pointer;
 }
 
@@ -112,6 +112,7 @@ body {
   text-overflow: ellipsis;
   width: 100%;
   font-weight: bold;
+  margin: 1px;
 }
 
 .card:hover .card-footer {
